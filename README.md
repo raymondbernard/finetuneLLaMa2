@@ -42,7 +42,7 @@ MIT License
 
 (c) 2023 Ray Bernard 
 
-This is a simple guide to get started with the TrainPrompt application. Please, do not hesitate to open an issue if you encounter any problem or have a suggestion.
+This is a simple guide to get started with the finetuneLLaMa2 application. Please, do not hesitate to open an issue if you encounter any problem or have a suggestion.
 
 
 
