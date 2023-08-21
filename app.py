@@ -16,15 +16,15 @@ if st.button('Accept Inputs'):
     st.write(f"Prompt Text: {prompt_text}")
     st.write(f"Ideal Generated Text: {ideal_generated_text}")
     
-    # Format data
-    
-data = {
-    "text": f"<<SYS>>\n{system_message}\n<</SYS>>\n\n<<SYS>>\n<s>[INST] {prompt_text} [/INST] {ideal_generated_text}</s>\n<</SYS>>"
-}
+        # Format data
+        
+    data = {
+        "text": f"<<SYS>>\n{system_message}\n<</SYS>>\n\n<<SYS>>\n<s>[INST] {prompt_text} [/INST] {ideal_generated_text}</s>\n<</SYS>>"
+    }
 
 
-# Append to jsonl file
-with jsonlines.open('output.jsonl', mode='a') as writer:
-    writer.write(data)
+    # Append to jsonl file
+    with jsonlines.open('output.jsonl', mode='a') as writer:
+        writer.write(data)
 
-st.success('Data has been appended to JSONL file!')
+    st.success('Data has been appended to JSONL file!')
