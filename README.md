@@ -3,13 +3,13 @@
 
 This application is built using Streamlit and helps users  create a properly  formatted JSONL file.  This file format is needed to fine-tune a LLaMa2 chat model.
 
-'''
+```
 <s>[INST] <<SYS>>
 {{ system_prompt }}
 <</SYS>>
 
 {{ user_message }} [/INST]
-'''
+```
 
 
 ## Features
